@@ -94,7 +94,7 @@ void main() {
     vec3 color = vec3(0.);
     
     float d = 1.-distance(st,vec2(.5));
-    d = sin(d*3.14*5.-u_time*3.);
+    d = sin(d*3.14*5.-cos(u_time)*3.);
 
     st *= 10.;
         st = truchet(st*3.);
